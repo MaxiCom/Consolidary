@@ -2,8 +2,8 @@
 
 var app = angular.module('Consolidary', []);
 
-app.controller('coreCtrl', ['$scope', '$http',
-	function ($scope, $http) {
+app.controller('coreCtrl', ['$scope', '$http', '$timeout',
+	function ($scope, $http, $timeout) {
 		$scope.change_category = function($event) {
 			var elem = angular.element(event.target);
 
@@ -84,7 +84,10 @@ app.controller('coreCtrl', ['$scope', '$http',
 			else
 				display_failed_screen();
 			$('input[type=radio]:checked').attr('checked', false);
-			$scope.load_game();
+
+			$timeout(function() {
+				$scope.load_game();
+			}, 400);
 		}
 
 		$scope.load_game();

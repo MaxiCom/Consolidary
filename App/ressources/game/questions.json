@@ -1,29 +1,50 @@
 {
 	"web": {
-		"0": ["Laquelle de ces propositions n'est pas un navigateur internet?", "Google Chrome", "Mozilla Firefox", "Opera de Paris", "Opera de Paris"]
+		"0": ["Quand on parle du protocole Https, Https signifie:", "HyperTool Transfer Page Secure", "HyperText Transfer Protocol Secure", "HyperText Telnet Protocol Secure", "HyperText Transfer Protocol Secure"],
+		"1": ["Que signifie URL?", "Uniform Resource Locator", "Unify Resource Linker", "Uniform Resource location", "Uniform Resource Locator"],
+		"2": ["Quel est le nom du framework CSS crée par Twitter qui permet de facilité la création de pages web responsives?", "Sass", "Less", "Bootstrap", "Bootstrap"],
+		"3": ["Quelle technologie a révolutionné le développement Web en permettant de développer son serveur en Javascript?", "AngularJS", "MongoDB", "Node.Js", "Node.Js"]
+
 	}, 
 
 	"compilation": {
-		"0": ["Comment comp?", "Comme ça"]
+		"0": ["Avec gcc quel argument permet de spécifier un chemin auquel chercher les librairies?", "-L /path/", "-l /path/", "--Youshallnot /PATHHHH/", "-L /path/"],
+		"1": ["Quel est l'argument utilisé pour executer un make à un chemin différent du chemin actuel?", "make -C ../", "make -P ../", "make -o ../", "make -C ../"]
 	}, 
 
 	"securite": {
-		"0": ["Le protocole https vous protège-t-il de tout risque de vol de données?", "Comme ça"]
+		"0": ["Quel protocole de messagerie permet de spoofer une adresse email?", "Le protocole POP3", "Le protocole SMTP", "Le protocole IMAP", "Le protocole SMTP"],
+		"1": ["Quel est le moyen de se connecter à un réseau duquel votre adresse MAC est filtrée?", "En se connectant en Ethernet", "En spoofant une autre adresse MAC", "C'est impossible", "En spoofant une autre adresse MAC"],
+		"2": ["Comment bypass le mot de passe d'un bios?", "C'est impossible", "En appuyant sur CTRL + SHIFT + DEL", "En retirant la pile de la carte mère", "En retirant la pile de la carte mère"],
+		"3": ["Quel type d'attaque permet de saturer un serveur en lui envoyant massivement des paquets depuis UNE SEULE machine?", "DDOS", "DOS", "MITM", "DOS"]
 	}, 
 
 	"reseau": {
-		"0": ["Comment reseau?", "Comme ça"]
+		"0": ["Quel est le port utilisé par défaut par le protocole FTP?", "le port 515", "Le port 80", "Le port 21", "Le port 21"],
+		"1": ["De combien d'octets est composée une adresse MAC?", "6 Octets", "3 Octets", "12 Octets", "6 Octets"],
+		"2": ["Quelle est la fréquence utilisée par un Wi-Fi à la norme IEEE 802.11b/g ?", "2.4 Gigahertz", "5 Gigahertz", "105.5Mhz", "2.4 Gigahertz"]
+
 	}, 
 
 	"python": {
-		"0": ["Comment python?", "Comme ça"]
+		"0": ["Quel est la dernière version majeure du langage python?", "Python5", "Python2", "Python3", "Python3"],
+		"1": ["Quel est le gestionnaire de paquet officiel du langage python?", "Pip", "Py", "Pie", "Pip"],
+		"2": ["En python2 quel module natif est utilisé pour faire des requêtes HTTP et HTTPS?", "httplib", "requests", "httpreq", "httplib"]
 	}, 
 
 	"candcpp": {
-		"0": ["Comment c C++?", "Comme ça"]
+		"0": ["Qu'est-ce qu'un singleton?", "Une classe instanciable qu'une fois", "Une fonction appelable qu'une fois", "Une variable modifiable qu'une fois", "Une classe instanciable qu'une fois"],
+		"1": ["Chaque nœud d'un arbre binaire est composé de combien de nœuds enfants maximum?", "3 Nœuds", "1 Nœud", "2 Nœuds", "2 Nœuds"],
+		"2": ["Quel langage dispose nativement du function overloading", "Le langage C", "Le langage C++", "Les deux", "Le langage C++"]
 	}, 
 
 	"assembleur": {
-		"0": ["Comment asm?", "Comme ça"]
+		"0": ["Lequel de ces registres n'existe pas?", "RAX", "RIP", "PWN", "PWN"],
+		"1": ["A partir de quel registre accède-t-on à la partie basse d'EAX?", "AX", "AL", "AH", "AX"],
+		"2": ["Parmi ces propositions, quel assembleur n'existe pas?", "NASM", "TASM", "SPASM", "SPASM"],
+		"3": ["Quelle instruction déplace une valeur donnée dans un registre?", "MOV", "MUL", "ADD", "MOV"],
+		"4": ["A la compilation sous Linux, quel format allons-nous utiliser?", "ELF", "Mach-O", "PE", "ELF"],
+		"5": ["Comment commence-t-on un commentaire en langage Assembleur?", "  ;  ", "  <!--  ", "  //  ", "  ;  "]
+
 	}
 }
