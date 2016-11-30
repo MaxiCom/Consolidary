@@ -18,7 +18,7 @@ app.controller('coreCtrl', ['$scope', '$http',
 		$scope.pick_question = function(questions) {
 			var question = null;
 
-			switch ($('nav ul li.active').text().toLowerCase()) {
+			switch ($('nav ul li.active').attr('id')) {
 					case 'web':
 						question = questions.web
 						[Math.floor(Math.random() * Object.keys(questions.web).length)];
@@ -27,11 +27,11 @@ app.controller('coreCtrl', ['$scope', '$http',
 						question = questions.compilation
 						[Math.floor(Math.random() * Object.keys(questions.compilation).length)];
 						break ;
-					case 'sécurité':
+					case 'securite':
 						question = questions.securite
 						[Math.floor(Math.random() * Object.keys(questions.securite).length)];
 						break ;
-					case 'réseau':
+					case 'reseau':
 						question = questions.reseau
 						[Math.floor(Math.random() * Object.keys(questions.reseau).length)];
 						break ;
@@ -47,6 +47,9 @@ app.controller('coreCtrl', ['$scope', '$http',
 						question = questions.assembleur
 						[Math.floor(Math.random() * Object.keys(questions.assembleur).length)];
 						break ;
+					default:
+						alert($('nav ul li.active').val());
+						break;
 				}
 
 			// FILL FIELDS //

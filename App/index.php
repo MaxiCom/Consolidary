@@ -17,13 +17,13 @@
 			<nav>
 				<div id="nav_wrapper">
 					<ul class="no_select">
-						<li class="active" ng-click="change_category($event)">Web</li>
-						<li ng-click="change_category($event)">Compilation</li>
-						<li ng-click="change_category($event)">Sécurité</li>
-						<li ng-click="change_category($event)">Réseau</li>
-						<li ng-click="change_category($event)">Python</li>
-						<li ng-click="change_category($event)">C / C++</li>
-						<li ng-click="change_category($event)">Assembleur</li>
+						<li class="active" ng-click="change_category($event)" id="web">Web</li>
+						<li ng-click="change_category($event)" id="compilation">Compilation</li>
+						<li ng-click="change_category($event)" id="securite">Sécurité</li>
+						<li ng-click="change_category($event)" id="reseau">Réseau</li>
+						<li ng-click="change_category($event)" id="python">Python</li>
+						<li ng-click="change_category($event)" id="c / c++">C / C++</li>
+						<li ng-click="change_category($event)" id="assembleur">Assembleur</li>
 					</ul>
 				</div>
 			</nav>
