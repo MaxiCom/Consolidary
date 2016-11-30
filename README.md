@@ -2,7 +2,7 @@
 
 Un site de quizz informatique.
 
-Lien: http://maxime-morlet.hostei.com/Consolidary
+Lien: http://maxime-morlet.hostei.com/Consolidary/
 
     Développé avec Sass, AngularJS, JQuery, JQuery ui
     
