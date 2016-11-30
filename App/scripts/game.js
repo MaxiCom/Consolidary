@@ -47,9 +47,6 @@ app.controller('coreCtrl', ['$scope', '$http',
 						question = questions.assembleur
 						[Math.floor(Math.random() * Object.keys(questions.assembleur).length)];
 						break ;
-					default:
-						alert($('nav ul li.active').val());
-						break;
 				}
 
 			// FILL FIELDS //
