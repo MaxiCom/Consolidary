@@ -1,17 +1,29 @@
 {
 	"web": {
 		"0": ["Laquelle de ces propositions n'est pas un navigateur internet?", "Google Chrome", "Mozilla Firefox", "Opera de Paris", "Opera de Paris"]
-	}, "compilation": {
+	}, 
+
+	"compilation": {
 		"0": ["Comment comp?", "Comme ça"]
-	}, "securite": {
+	}, 
+
+	"securite": {
 		"0": ["Le protocole https vous protège-t-il de tout risque de vol de données?", "Comme ça"]
-	}, "reseau": {
+	}, 
+
+	"reseau": {
 		"0": ["Comment reseau?", "Comme ça"]
-	}, "python": {
+	}, 
+
+	"python": {
 		"0": ["Comment python?", "Comme ça"]
-	}, "candcpp": {
+	}, 
+
+	"candcpp": {
 		"0": ["Comment c C++?", "Comme ça"]
-	}, "assembleur": {
+	}, 
+
+	"assembleur": {
 		"0": ["Comment asm?", "Comme ça"]
 	}
 }

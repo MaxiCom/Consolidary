@@ -4,7 +4,7 @@ var app = angular.module('Consolidary', []);
 
 app.controller('coreCtrl', ['$scope', '$http',
 	function ($scope, $http) {
-		$scope.change_category = function(category, $event) {
+		$scope.change_category = function($event) {
 			var elem = angular.element(event.target);
 
 			if (!elem.hasClass('active'))
@@ -15,13 +15,10 @@ app.controller('coreCtrl', ['$scope', '$http',
 			}
 		};
 
-		$scope.load_game = function() {
-			$http.get('ressources/game/questions.json')
-			.then(function(res){
-				var questions = res.data;
-				var question = null;
+		$scope.pick_question = function(questions) {
+			var question = null;
 
-				switch ($('nav ul li.active').text().toLowerCase()) {
+			switch ($('nav ul li.active').text().toLowerCase()) {
 					case 'web':
 						question = questions.web
 						[Math.floor(Math.random() * Object.keys(questions.web).length)];
@@ -52,13 +49,25 @@ app.controller('coreCtrl', ['$scope', '$http',
 						break ;
 				}
 
-				// FILL FIELDS //
-				$scope.question = question[0];
-				$scope.first_proposition = question[1];
-				$scope.second_proposition = question[2];
-				$scope.third_proposition = question[3];
-				$scope.answer = question[4];
-			});
+			// FILL FIELDS //
+			$scope.question = question[0];
+			$scope.first_proposition = question[1];
+			$scope.second_proposition = question[2];
+			$scope.third_proposition = question[3];
+			$scope.answer = question[4];
+		};
+
+		$scope.load_game = function() {
+			if ($scope.questions == null) {
+				$http.get('ressources/game/questions.json')
+				.then(function(res){
+					$scope.questions = res.data;
+
+					$scope.pick_question($scope.questions);
+				});
+			} else {
+				$scope.pick_question($scope.questions);
+			}
 		};
 
 		var display_success_screen = function() {
