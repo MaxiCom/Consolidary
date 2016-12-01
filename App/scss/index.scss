@@ -14,12 +14,16 @@ nav {
 		margin: 0 auto;
 
 		ul {
+			display: flex;
+
+			width: 100%;
+
 			list-style: none;
 
 			li {
-				float: left;
+				flex-grow: 1;
 
-				width: 14.28%;
+				float: left;
 
 				text-align: center;
 				font-weight: 600;
