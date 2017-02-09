@@ -3,16 +3,20 @@
 	<head>
 		<?php include("views/head.html"); ?>
 	</head>
+
 	<body ng-app="Consolidary">
 		<div id="loader_wrapper">
 			<h1 class="hidden"><span class="hidden">Consolidary</span></h1>
 		</div>
+
 		<div id="success_wrapper" class="not_displayed">
 			<h3>Success !</h1>
 		</div>
+
 		<div id="failed_wrapper" class="not_displayed">
 			<h3>Failed !</h1>
 		</div>
+		
 		<div id="container" ng-controller="coreCtrl">
 			<nav>
 				<div id="nav_wrapper">
