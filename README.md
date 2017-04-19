@@ -2,7 +2,7 @@
 
 Un site de quizz informatique.
 
-Lien: https://Maxime-Morlet.fr/Consolidary/
+Lien: https://MaxiCom.pro/Consolidary/
 
     Développé avec Sass, AngularJS, JQuery, JQuery ui
     
